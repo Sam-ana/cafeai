@@ -1,0 +1,635 @@
+/* =========================================================
+   CAFE AI — PREMIUM ITALIAN CAFE
+   ========================================================= */
+
+@import url(
+    'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap'
+);
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+html,
+body,
+[class*="css"] {
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+}
+
+
+.stApp {
+
+    background:
+        #f6efe3;
+
+    color:
+        #302016;
+
+}
+
+
+.block-container {
+
+    max-width:
+        1250px;
+
+    padding-top:
+        2rem;
+
+    padding-bottom:
+        4rem;
+
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+section[data-testid="stSidebar"] {
+
+    background:
+        #302016;
+
+}
+
+
+section[data-testid="stSidebar"] * {
+
+    color:
+        #fff8ef;
+
+}
+
+
+.sidebar-brand {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        32px;
+
+    font-weight:
+        700;
+
+    margin-bottom:
+        3px;
+
+}
+
+
+.sidebar-subtitle {
+
+    color:
+        #d8c4af !important;
+
+    font-size:
+        13px;
+
+    margin-bottom:
+        30px;
+
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+
+    min-height:
+        520px;
+
+    border-radius:
+        28px;
+
+    background-image:
+
+        linear-gradient(
+            90deg,
+            rgba(48, 32, 22, 0.93),
+            rgba(48, 32, 22, 0.60),
+            rgba(48, 32, 22, 0.15)
+        ),
+
+        url(
+            "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1800&q=90"
+        );
+
+    background-size:
+        cover;
+
+    background-position:
+        center;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    padding:
+        70px;
+
+    margin-bottom:
+        50px;
+
+}
+
+
+.hero-overlay {
+
+    max-width:
+        650px;
+
+}
+
+
+.hero-eyebrow,
+.eyebrow {
+
+    color:
+        #c99a67;
+
+    letter-spacing:
+        3px;
+
+    font-size:
+        12px;
+
+    font-weight:
+        700;
+
+}
+
+
+.hero h1 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    color:
+        #fffaf2;
+
+    font-size:
+        68px;
+
+    line-height:
+        1.05;
+
+    margin:
+        15px 0;
+
+}
+
+
+.hero h1 span {
+
+    color:
+        #dfb985;
+
+}
+
+
+.hero p {
+
+    color:
+        #f3e7d8;
+
+    font-size:
+        18px;
+
+    line-height:
+        1.7;
+
+    max-width:
+        560px;
+
+}
+
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+.section-heading {
+
+    margin:
+        25px 0 30px;
+
+}
+
+
+.section-heading h2 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        43px;
+
+    color:
+        #302016;
+
+    margin:
+        7px 0;
+
+}
+
+
+.section-heading p {
+
+    color:
+        #5d493b;
+
+    max-width:
+        700px;
+
+}
+
+
+/* =========================================================
+   FEATURE CARDS
+   ========================================================= */
+
+.feature-card {
+
+    background:
+        #fffaf2;
+
+    border:
+        1px solid #eadcca;
+
+    border-radius:
+        22px;
+
+    padding:
+        30px;
+
+    min-height:
+        230px;
+
+    box-shadow:
+        0 10px 30px rgba(48, 32, 22, 0.07);
+
+}
+
+
+.feature-icon {
+
+    font-size:
+        35px;
+
+    margin-bottom:
+        12px;
+
+}
+
+
+.feature-card h3 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    color:
+        #302016;
+
+    font-size:
+        24px;
+
+}
+
+
+.feature-card p {
+
+    color:
+        #5d493b;
+
+    line-height:
+        1.7;
+
+}
+
+
+/* =========================================================
+   PRODUCT CARDS
+   ========================================================= */
+
+.product-card {
+
+    background:
+        #fffaf2;
+
+    border-radius:
+        22px;
+
+    overflow:
+        hidden;
+
+    border:
+        1px solid #eadcca;
+
+    margin-bottom:
+        12px;
+
+    box-shadow:
+        0 10px 30px rgba(48, 32, 22, 0.07);
+
+}
+
+
+.product-image {
+
+    width:
+        100%;
+
+    height:
+        220px;
+
+    object-fit:
+        cover;
+
+}
+
+
+.product-content {
+
+    padding:
+        22px;
+
+}
+
+
+.product-category {
+
+    color:
+        #a65d43;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        2px;
+
+    font-size:
+        11px;
+
+    font-weight:
+        700;
+
+}
+
+
+.product-content h3 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        25px;
+
+    color:
+        #302016;
+
+    margin:
+        8px 0;
+
+}
+
+
+.product-content p {
+
+    color:
+        #5d493b;
+
+    line-height:
+        1.6;
+
+    min-height:
+        65px;
+
+}
+
+
+.product-price {
+
+    color:
+        #5a3825;
+
+    font-size:
+        20px;
+
+    font-weight:
+        700;
+
+    margin-top:
+        12px;
+
+}
+
+
+/* =========================================================
+   BARISTA
+   ========================================================= */
+
+.barista-hero {
+
+    background:
+        #302016;
+
+    border-radius:
+        26px;
+
+    padding:
+        40px;
+
+    margin-bottom:
+        30px;
+
+}
+
+
+.barista-hero h2 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    color:
+        #fff8ef;
+
+    font-size:
+        42px;
+
+}
+
+
+.barista-hero p {
+
+    color:
+        #e3d2c1;
+
+    line-height:
+        1.7;
+
+}
+
+
+/* =========================================================
+   CART
+   ========================================================= */
+
+.cart-total {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    background:
+        #302016;
+
+    color:
+        #fff8ef;
+
+    padding:
+        22px 28px;
+
+    border-radius:
+        18px;
+
+    font-size:
+        20px;
+
+}
+
+
+/* =========================================================
+   QUOTE
+   ========================================================= */
+
+.home-quote {
+
+    text-align:
+        center;
+
+    margin:
+        70px 0;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        30px;
+
+    color:
+        #5a3825;
+
+}
+
+
+.home-quote span {
+
+    display:
+        block;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        13px;
+
+    margin-top:
+        10px;
+
+    color:
+        #8a6248;
+
+}
+
+
+/* =========================================================
+   STREAMLIT ELEMENTS
+   ========================================================= */
+
+button {
+
+    border-radius:
+        12px !important;
+
+}
+
+
+div[data-testid="stButton"] button {
+
+    background:
+        #5a3825;
+
+    color:
+        white;
+
+    border:
+        none;
+
+}
+
+
+div[data-testid="stButton"] button:hover {
+
+    background:
+        #302016;
+
+    color:
+        white;
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+
+        min-height:
+            430px;
+
+        padding:
+            35px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size:
+            45px;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size:
+            34px;
+
+    }
+
+}

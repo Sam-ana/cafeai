@@ -1,0 +1,42 @@
+[
+  {
+    "id": "espresso",
+    "name": "Espresso",
+    "category": "Coffee",
+    "price": 180,
+    "description": "Rich and concentrated espresso with a smooth crema.",
+    "tags": ["strong", "hot", "classic"]
+  },
+  {
+    "id": "americano",
+    "name": "Americano",
+    "category": "Coffee",
+    "price": 200,
+    "description": "Espresso blended with hot water for a smooth, bold coffee.",
+    "tags": ["strong", "hot", "smooth"]
+  },
+  {
+    "id": "cafe-latte",
+    "name": "Cafe Latte",
+    "category": "Coffee",
+    "price": 280,
+    "description": "Smooth espresso combined with steamed milk and light foam.",
+    "tags": ["mild", "milky", "smooth"]
+  },
+  {
+    "id": "cappuccino",
+    "name": "Cappuccino",
+    "category": "Coffee",
+    "price": 290,
+    "description": "Balanced espresso, steamed milk and creamy foam.",
+    "tags": ["medium", "milky", "creamy"]
+  },
+  {
+    "id": "mocha",
+    "name": "Cafe Mocha",
+    "category": "Coffee",
+    "price": 320,
+    "description": "Espresso with chocolate and steamed milk.",
+    "tags": ["sweet", "chocolate", "milky"]
+  }
+]

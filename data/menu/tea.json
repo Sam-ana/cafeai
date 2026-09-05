@@ -1,0 +1,26 @@
+[
+  {
+    "id": "masala-tea",
+    "name": "Masala Tea",
+    "category": "Tea",
+    "price": 180,
+    "description": "Traditional milk tea infused with aromatic spices.",
+    "tags": ["hot", "spiced", "milky"]
+  },
+  {
+    "id": "green-tea",
+    "name": "Green Tea",
+    "category": "Tea",
+    "price": 160,
+    "description": "Light and refreshing green tea.",
+    "tags": ["hot", "light", "refreshing"]
+  },
+  {
+    "id": "lemon-tea",
+    "name": "Lemon Tea",
+    "category": "Tea",
+    "price": 170,
+    "description": "Refreshing black tea with fresh lemon.",
+    "tags": ["hot", "refreshing", "citrus"]
+  }
+]

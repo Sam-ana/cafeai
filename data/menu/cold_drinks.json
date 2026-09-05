@@ -1,0 +1,34 @@
+[
+  {
+    "id": "iced-latte",
+    "name": "Iced Latte",
+    "category": "Cold Drinks",
+    "price": 300,
+    "description": "Chilled espresso with cold milk and ice.",
+    "tags": ["cold", "mild", "milky"]
+  },
+  {
+    "id": "iced-americano",
+    "name": "Iced Americano",
+    "category": "Cold Drinks",
+    "price": 240,
+    "description": "Espresso, chilled water and ice.",
+    "tags": ["cold", "strong", "refreshing"]
+  },
+  {
+    "id": "cold-brew",
+    "name": "Cold Brew",
+    "category": "Cold Drinks",
+    "price": 320,
+    "description": "Smooth coffee slowly brewed with cold water.",
+    "tags": ["cold", "smooth", "strong"]
+  },
+  {
+    "id": "chocolate-frappe",
+    "name": "Chocolate Frappe",
+    "category": "Cold Drinks",
+    "price": 350,
+    "description": "Creamy blended chocolate coffee drink served cold.",
+    "tags": ["cold", "sweet", "chocolate"]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "chocolate-cake",
+    "name": "Chocolate Cake",
+    "category": "Snacks",
+    "price": 280,
+    "description": "Moist chocolate cake with rich chocolate flavor.",
+    "tags": ["sweet", "chocolate", "dessert"]
+  },
+  {
+    "id": "croissant",
+    "name": "Butter Croissant",
+    "category": "Snacks",
+    "price": 220,
+    "description": "Flaky, buttery French-style croissant.",
+    "tags": ["buttery", "light", "breakfast"]
+  },
+  {
+    "id": "brownie",
+    "name": "Chocolate Brownie",
+    "category": "Snacks",
+    "price": 240,
+    "description": "Dense and fudgy chocolate brownie.",
+    "tags": ["sweet", "chocolate", "dessert"]
+  },
+  {
+    "id": "sandwich",
+    "name": "Veggie Sandwich",
+    "category": "Snacks",
+    "price": 300,
+    "description": "Fresh vegetables and cheese served in toasted bread.",
+    "tags": ["savory", "fresh", "filling"]
+  }
+]
