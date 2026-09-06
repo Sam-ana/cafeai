@@ -9,7 +9,6 @@ from app.workflows.rag_workflow import build_rag_workflow
 
 @st.cache_resource
 def get_rag_app():
-
     return build_rag_workflow()
 
 
@@ -19,7 +18,11 @@ def get_rag_app():
 
 def render_barista():
 
-    st.markdown(
+    # --------------------------------------------------------
+    # AI BARISTA HEADER
+    # --------------------------------------------------------
+
+    st.html(
         """
         <div class="barista-hero">
 
@@ -37,31 +40,35 @@ def render_barista():
             </p>
 
         </div>
-        """,
-        unsafe_allow_html=True,
+        """
     )
 
+    # --------------------------------------------------------
+    # CHAT HISTORY
+    # --------------------------------------------------------
 
     if "messages" not in st.session_state:
-
         st.session_state.messages = []
-
 
     for message in st.session_state.messages:
 
-        with st.chat_message(
-            message["role"]
-        ):
+        with st.chat_message(message["role"]):
 
             st.markdown(
                 message["content"]
             )
 
+    # --------------------------------------------------------
+    # CHAT INPUT
+    # --------------------------------------------------------
 
     prompt = st.chat_input(
         "What are you in the mood for?"
     )
 
+    # --------------------------------------------------------
+    # USER MESSAGE
+    # --------------------------------------------------------
 
     if prompt:
 
@@ -72,11 +79,13 @@ def render_barista():
             }
         )
 
-
         with st.chat_message("user"):
 
             st.markdown(prompt)
 
+        # ----------------------------------------------------
+        # AI RESPONSE
+        # ----------------------------------------------------
 
         with st.chat_message("assistant"):
 
@@ -86,24 +95,29 @@ def render_barista():
 
                 try:
 
+                    # Load the RAG application
                     rag_app = get_rag_app()
 
+                    # Send the user's question
                     result = rag_app.invoke(
                         {
                             "question": prompt
                         }
                     )
 
+                    # Get AI answer
                     answer = result.get(
                         "answer",
                         "I couldn't find that information."
                     )
 
+                    # Get sources
                     sources = result.get(
                         "sources",
                         []
                     )
 
+                    # Add sources if available
                     if sources:
 
                         answer += (
@@ -122,9 +136,12 @@ def render_barista():
                         "to the AI Barista right now."
                     )
 
-
+                # Display answer
                 st.markdown(answer)
 
+        # ----------------------------------------------------
+        # SAVE AI RESPONSE
+        # ----------------------------------------------------
 
         st.session_state.messages.append(
             {
