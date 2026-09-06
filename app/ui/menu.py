@@ -4,7 +4,7 @@ from app.menu.loader import load_menu
 
 
 # ============================================================
-# MENU
+# LOAD MENU
 # ============================================================
 
 MENU = load_menu()
@@ -15,7 +15,6 @@ MENU = load_menu()
 # ============================================================
 
 MENU_IMAGES = {
-
     "espresso":
         "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=900&q=85",
 
@@ -93,12 +92,16 @@ def add_to_cart(item):
 
 
 # ============================================================
-# PAGE
+# MENU PAGE
 # ============================================================
 
 def render_menu():
 
-    st.markdown(
+    # --------------------------------------------------------
+    # PAGE HEADER
+    # --------------------------------------------------------
+
+    st.html(
         """
         <div class="section-heading">
 
@@ -116,10 +119,8 @@ def render_menu():
             </p>
 
         </div>
-        """,
-        unsafe_allow_html=True,
+        """
     )
-
 
     # --------------------------------------------------------
     # CATEGORY FILTER
@@ -138,9 +139,8 @@ def render_menu():
         categories,
     )
 
-
     # --------------------------------------------------------
-    # FILTER
+    # FILTER MENU
     # --------------------------------------------------------
 
     if selected_category == "All":
@@ -155,9 +155,8 @@ def render_menu():
             if item["category"] == selected_category
         ]
 
-
     # --------------------------------------------------------
-    # DISPLAY
+    # DISPLAY PRODUCTS
     # --------------------------------------------------------
 
     for start in range(
@@ -185,7 +184,11 @@ def render_menu():
                     "?auto=format&fit=crop&w=900&q=85",
                 )
 
-                st.markdown(
+                # ------------------------------------------------
+                # PRODUCT CARD
+                # ------------------------------------------------
+
+                st.html(
                     f"""
                     <div class="product-card">
 
@@ -215,9 +218,12 @@ def render_menu():
                         </div>
 
                     </div>
-                    """,
-                    unsafe_allow_html=True,
+                    """
                 )
+
+                # ------------------------------------------------
+                # ADD TO CART
+                # ------------------------------------------------
 
                 if st.button(
                     "Add to Cart",
